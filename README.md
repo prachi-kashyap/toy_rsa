@@ -32,3 +32,11 @@ I tested the functionality of the toy RSA library by:
 ## Conclusion
 
 This project helped me understand the basics of the RSA algorithm and how to implement it in Rust. It was a valuable learning experience, and I'm now more confident in working with cryptography concepts and Rust programming.
+
+## References
+
+1. git@gitlab.cecs.pdx.edu:pk23/toy_rsa.git
+2. https://docs.rs/rsa/latest/rsa/
+3. https://thatsmaths.com/2016/08/11/a-toy-example-of-rsa-encryption/
+4. https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29
+5. https://chat.openai.com/
