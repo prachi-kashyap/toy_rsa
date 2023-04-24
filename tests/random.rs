@@ -4,12 +4,9 @@ use toy_rsa::{decrypt, encrypt, genkey};
 #[test]
 fn test_random_encrypt_decrypt() {
     let mut rng = rand::thread_rng();
-
-    // Run the test multiple times to increase confidence in the implementation.
     for _ in 0..10 {
         let (p, q) = genkey();
         let public_key = p as u64 * q as u64;
-
         let msg: u32 = rng.gen_range(1..u32::MAX);
         let encrypted = encrypt(public_key, msg);
         let decrypted = decrypt((p, q), encrypted);
